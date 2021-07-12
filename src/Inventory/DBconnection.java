@@ -1,4 +1,4 @@
-package pos;
+package Inventory;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

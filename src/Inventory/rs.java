@@ -3,19 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pos;
+package Inventory;
 
 /**
  *
  * @author kobinath
  */
-class ComboItem {
+class rs {
 
-    ComboItem(int i, String _select_) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    int GetIndex() {
+    static void next() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

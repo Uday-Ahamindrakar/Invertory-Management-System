@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pos;
+package Inventory;
 
 import java.sql.*;
 import java.sql.DriverManager;
@@ -11,6 +11,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
+import java.awt.Color;
 
 
 public class login extends javax.swing.JFrame {
@@ -19,6 +20,7 @@ public class login extends javax.swing.JFrame {
 	  ResultSet rs1;
     
     public login() {
+    	getContentPane().setBackground(new Color(175, 238, 238));
         initComponents();
     }
 
@@ -28,6 +30,7 @@ public class login extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        jPanel1.setBackground(new Color(240, 255, 255));
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         txtuser = new javax.swing.JTextField();
@@ -37,7 +40,7 @@ public class login extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Login");
+        setTitle("Inventory Management System - Login");
         setBackground(new java.awt.Color(0, 102, 255));
         setForeground(new java.awt.Color(0, 102, 255));
 
@@ -134,7 +137,7 @@ public class login extends javax.swing.JFrame {
     	con1 = DBconnection.DBconnect();
         try {
            
-            System.out.println("Running");
+            //System.out.println("Running");
             
             insert = con1.prepareStatement("SELECT * FROM cashier WHERE username=? and password=? ");
                                        
@@ -146,7 +149,8 @@ public class login extends javax.swing.JFrame {
        {         
           category c = new category();
           this.hide();
-         new pos(txtuser.getText()).setVisible(true);             
+          c.setVisible(true);
+         //new pos(txtuser.getText()).setVisible(true);             
        }
       else
        {

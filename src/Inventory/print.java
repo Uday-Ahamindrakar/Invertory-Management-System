@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pos;
+package Inventory;
 
 import java.awt.print.PrinterException;
 import javax.swing.JEditorPane;

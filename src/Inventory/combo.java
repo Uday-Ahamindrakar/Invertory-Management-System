@@ -3,15 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pos;
+package Inventory;
 
 /**
  *
  * @author kobinath
  */
-class rs {
+class combo {
 
-    static void next() {
+    static void addItem(ComboItem nullValue) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
